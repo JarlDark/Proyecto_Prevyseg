@@ -1,0 +1,24 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block title %}Inicio - Otec Prevyseg{% endblock %}
+
+{% block content %}
+    <div class="p-5 mb-5 text-white rounded banner-ofertas" style="background-color: #0c94c6ff;">
+        <div class="d-flex align-items-center">
+            <div>
+                <h1>¡Grandes ofertas de cursos imperdibles!</h1>
+                <p class="lead">Desde el 28/10/2025 hasta el 15/11/2025</p>
+            </div>
+            </div>
+    </div>
+
+    <div class="row align-items-center mb-5">
+        <div class="col-md-7">
+            <h2>¡Capacítate con Otec Prevyseg!</h2>
+            <p>Impulsa tu crecimiento profesional a través de nuestra academia especializada en formación en desarrollo organizacional, seguridad privada y otras áreas clave. Nos comprometemos con la transparencia y el estricto respeto por las normativas legales vigentes en Chile.</p>
+        </div>
+        <div class="col-md-5">
+            <img src="{% static 'core/images/seguridad.png' %}" class="img-fluid rounded" alt="Guardia de seguridad">
+        </div>
+    </div>
+{% endblock %}

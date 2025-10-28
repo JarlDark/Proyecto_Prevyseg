@@ -1,0 +1,61 @@
+
+.navbar .nav-link {
+    color: #0d2c54; 
+    font-weight: 500; 
+}
+
+.navbar .nav-link:hover {
+    color: #00AEEF; 
+}
+
+.banner-ofertas {
+    border-radius: 20px; 
+}
+
+.login-body {
+    background-color: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.login-container {
+    max-width: 400px;
+    width: 100%;
+}
+
+.login-card {
+    border: none;
+    border-radius: 15px; /* Bordes más redondeados */
+    padding: 1.5rem;
+}
+
+.form-text {
+    font-size: 0.85rem;
+    text-decoration: none;
+}
+
+.login-btn-primary {
+    background-color: #343a40; /* Negro/Gris oscuro */
+    color: white;
+    font-weight: 500;
+    padding: 0.75rem;
+    border: none;
+}
+.login-btn-primary:hover {
+    background-color: #23272b; /* Un poco más oscuro al pasar el mouse */
+    color: white;
+}
+
+.login-btn-secondary {
+    background-color: #495057; /* Un gris un poco más claro */
+    color: white;
+    font-weight: 500;
+    padding: 0.75rem;
+    border: none;
+}
+.login-btn-secondary:hover {
+    background-color: #343a40;
+    color: white;
+}
