@@ -13,8 +13,18 @@ def proyecto_login_view(request):
             return redirect ('home')
     
     else:
-        form = AuthenticationForm
+        form = AuthenticationForm()
     return render(request, 'registration/login.html', {'form': form})
+
+@login_required
+def proyecto_profile_view(request):
+    profile, created = Profile.objects.get_or_create(user=request.user)
+
+    context = {
+        'user': request.user,
+        'profile': profile,
+    }
+    return render(request, 'registration/profile.html', context)
 
 @login_required
 def proyecto_logout_view(request):
